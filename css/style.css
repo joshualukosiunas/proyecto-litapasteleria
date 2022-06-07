@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.2rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+
+
+/************** INDEX ***************/
+
+.header{
+    grid-area: header;
+    display: flex;
+    background-color: #9D2020;
+    justify-content: space-between;
+}
+
+.logo{
+    display: inline;
+    padding: 20px;
+}
+
+h1 a{
+    display: inline;
+    text-decoration: none;
+    font-family: 'Fredoka One';
+    color: #ece2d0;
+    margin: 20px;
+    font-size: 50px;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #9D2020;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    list-style-type: none;
+    border: solid #ece2d0;
+    background: #ece2d0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.menu a{
+    color:#9D2020;
+    text-decoration: none;
+    font-family: 'Fredoka One';
+    font-size: 15px;
+}
+
+.menu ul{
+    display: none;
+}
+
+.menu a:hover{
+    background: border-box #9D2020;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ece2d0;
+    transition-duration: 0.2s;
+}
+
+.main{
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+}
+
+.main h2{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.main p{
+    font-family: 'Fredoka One';
+    padding: 20px 50px 50px 50px;
+}
+
+.section{
+    padding: 5px ;
+}
+
+.section img{
+    width: 268px;
+    margin: 27px 27px 64px 27px;
+    border: solid #ece2d0;
+    border-radius: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #523726;
+    font-family: 'Open Sans';
+}
+
+.footer h2{
+    font-family: 'Open Sans';
+    color: #ece2d0;
+    font-size: 18px;
+    text-align: center;
+    transform: translate(0, 4px);
+}
+
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+    justify-content: center
+}
+
+.footer li{
+    display: inline-block;
+    margin: 0 20px 0 20px
+}
+
+.footer a{
+    font-size: 55px;
+    color: #ece2d0;
+    width: 20px;
+}
+
+/************** SHOP ***************/
+
+.contenedorShop{
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.cajaShop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 94px;
+}
+
+.productosShop{
+    text-align: center;
+    padding: 25px 10px;
+    border: solid #523726;
+    color: #ece2d0;
+    background-color: #523726;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.productosShop:hover{
+    background-color:#ece2d0;
+    border: solid #ece2d0;
+    color: #523726;
+    transition-duration: 0.2s;
+}
+
+/************** EVENTOS ***************/
+
+.mainEventos{
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+}
+
+.mainEventos h2{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.mainEventos p{
+    font-family: 'Fredoka One';
+    padding: 20px 50px 50px 50px;
+    font-size: 25px;
+}
+
+.botonFormulario a{
+    font-family: 'Fredoka One';
+    color: #9D2020;
+    cursor: pointer;
+}
+
+.sectionEventos{
+    padding: 5px ;
+}
+
+.sectionEventos img{
+    width: 557px;
+    margin: 27px 27px 64px 27px;
+    border: solid #ece2d0;
+    border-radius: 20px;
+}
+
+/************** QUIENES SOMOS ***************/
+
+.mainQuienessomos{
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+    height: 721px;
+}
+
+.mainQuienessomos h2{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.cajaQuienessomos{
+    width: 500px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.cajaQuienessomos p{
+    font-family: 'Fredoka One';
+    font-size: 27px;
+    color: #ece2d0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/************** CONTACTO ***************/
+
+.mainContacto{
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+}
+
+.mainContacto h2{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.mainContacto p{ 
+    font-family: 'Fredoka One';
+    padding: 20px 50px 20px 50px;
+}
+
+.cajaFormulario{
+    width: 500px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.contactoFormulario{
+    margin: 35px;
+}
+
+.casillerosFormulario{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Fredoka One';
+}
+
+::placeholder{
+    color: #523726;
+    opacity: 0.5;
+}
+
+.textarea{
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.boton{
+    font-family: 'Fredoka One';
+    color: #523726;
+    background-color: #ece2d0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border: solid #ece2d0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/************** MEDIA QUERIES ***************/
+
+
+@media (max-width: 425px){
+    .grid-container{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "main main"
+        "footer footer";
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 a{
+        display: inline;
+        text-decoration: none;
+        font-family: 'Fredoka One';
+        color: #ece2d0;
+        margin: 20px;
+        font-size: 34px;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .menu li{
+        display: flex;
+        list-style-type: none;
+        border: solid #ece2d0;
+        background: #ece2d0;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 2px;
+        transition: all 1s;
+    }
+    
+    .menu a{
+        color: #9D2020;
+        text-decoration: none;
+        font-family: 'Fredoka One';
+        font-size: 8px;
+    }
+
+    .menu a:hover{
+        background: border-box #9D2020;
+        padding: 0px;
+        color: #ece2d0;
+        transition-duration: 0.2s;
+        border-radius: 20px;
+    }
+
+    .section img{
+        width: 282px;
+        margin: 10px 0px;
+        border: solid #ece2d0;
+        border-radius: 20px;
+    }
+
+    .footer a{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .grid-container{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas:
+        "header header navbar"
+        "main main main"
+        "footer footer footer";
+    }
+}
