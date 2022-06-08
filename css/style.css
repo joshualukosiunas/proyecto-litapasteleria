@@ -339,6 +339,9 @@ h1 a{
         "main main"
         "footer footer";
     }
+
+    /************** (MOBILE) INDEX ***************/
+    
     .header{
         display: flex;
         justify-content: center;
@@ -396,6 +399,79 @@ h1 a{
     .footer a{
         font-size: 50px;
     }
+
+    /************** (MOBILE) SHOP ***************/
+
+    .contenedorShop{
+        
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 30px;
+    
+    }
+    
+    .cajaShop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .productosShop{
+        text-align: center;
+        padding: 25px 10px;
+        border: solid #523726;
+        color: #ece2d0;
+        background-color: #523726;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    /************** (MOBILE) EVENTOS ***************/
+
+    .mainEventos{
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        background-color: #ece2d0;
+        font-family: 'Fredoka One';
+        text-align: center;
+        color: #523726;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .mainEventos h2{
+        flex-wrap: wrap;
+        font-size: 40px;
+        padding: 20px;
+    }
+    
+    .mainEventos p{
+        font-family: 'Fredoka One';
+        padding: 20px 50px 50px 50px;
+        font-size: 25px;
+    }
+    
+    .botonFormulario a{
+        font-family: 'Fredoka One';
+        color: #9D2020;
+        cursor: pointer;
+    }
+    
+    .sectionEventos{
+        padding: 5px ;
+    }
+    
+    .sectionEventos img{
+        width: 300px;
+        margin: 20px 0 20px 0;
+        border: solid #ece2d0;
+        border-radius: 20px;
+    }
+    
 }
 
 @media (min-width: 1280px) {
