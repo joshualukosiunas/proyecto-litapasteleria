@@ -446,8 +446,8 @@ h1 a{
     
     .mainEventos h2{
         flex-wrap: wrap;
-        font-size: 40px;
-        padding: 20px;
+        font-size: 50px;
+        padding: 12px;
     }
     
     .mainEventos p{
@@ -491,6 +491,60 @@ h1 a{
         color: #523726;
         flex-wrap: wrap;
         height: auto;
+    }
+
+    /************** (MOBILE) CONTACTO ***************/
+
+    .mainContacto {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: main;
+        background-color: #ece2d0;
+        font-family: 'Fredoka One';
+        text-align: center;
+        color: #523726;
+        justify-content: center;
+    }
+
+    .cajaFormulario {
+        display: flex;
+        width: 500px;
+        background-color: #523726;
+        margin: 20px auto;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mainContacto h2 {
+        font-size: 45px;
+        padding: 20px;
+    }
+
+    .cajaFormulario {
+        display: flex;
+        width: 300px;
+        background-color: #523726;
+        margin: 20px auto;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .casillerosFormulario {
+        width: 260px;
+        height: 40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid #777;
+        border-radius: 20px;
+        outline: none;
+        font-family: 'Fredoka One';
+    }
+
+    .contactoFormulario textarea {
+        height: 150px;
     }
 }
 
