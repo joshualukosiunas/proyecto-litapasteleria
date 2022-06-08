@@ -183,7 +183,7 @@ h1 a{
 
 .productosShop:hover{
     background-color:#ece2d0;
-    border: solid #ece2d0;
+    border: solid #523726;
     color: #523726;
     transition-duration: 0.2s;
 }
@@ -360,7 +360,7 @@ h1 a{
 
     .menu{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     
