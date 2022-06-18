@@ -79,6 +79,13 @@ h1 a{
     transition: .3s ease;
 }
 
+.inicio-activo, .shop-activo, .eventos-activo, .quienes-somos-activo, .contacto-activo{
+    background: border-box #9D2020;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ece2d0;
+}
+
 .menu ul{
     display: none;
 }
@@ -90,6 +97,7 @@ h1 a{
     color: #ece2d0;
     transition-duration: 0.2s;
 }
+
 
 .main{
     grid-area: main;
@@ -135,7 +143,7 @@ h1 a{
     animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .main p{
@@ -218,7 +226,7 @@ h1 a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 94px;
+    padding: 50px 90px 50px 90px;
 }
 
 .productosShop{
@@ -363,7 +371,7 @@ h1 a{
     font-family: 'Fredoka One';
     text-align: center;
     color: #523726;
-    height: 721px;
+    height: 100%;
 }
 
 .mainQuienessomos h2{
@@ -429,6 +437,13 @@ h1 a{
     border-radius: 20px;
     outline: none;
     font-family: 'Fredoka One';
+    color: #523726;
+    background-color: #ece2d0;
+}
+
+.casillerosFormulario:focus{
+    box-shadow: 0 0 7px #ece2d0;
+    transition: all 0.3s;
 }
 
 ::placeholder{
@@ -440,6 +455,11 @@ h1 a{
     height: 150px;
     padding-top: 10px;
     resize: none;
+}
+
+.textarea:focus {
+    box-shadow: 0 0 7px #ece2d0;
+    transition: all 0.3s;
 }
 
 .boton{
