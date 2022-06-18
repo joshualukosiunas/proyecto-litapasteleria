@@ -135,7 +135,7 @@ h1 a{
     animation-duration: 1s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite
+    -webkit-animation-iteration-count: infinite;
 }
 
 .main p{
