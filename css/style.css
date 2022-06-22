@@ -1,332 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+html {
+  height: 100%; }
 
-html{
-    height: 100%;
-}
+body {
+  min-height: 100%;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.2rem; }
 
-body{
-    min-height: 100%;
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 1.2rem;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "main"
-    "footer";
-}
-
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "navbar" "main" "footer"; }
 
 /************** INDEX ***************/
+.header {
+  grid-area: header;
+  display: flex;
+  background-color: #9D2020;
+  justify-content: space-between; }
 
-.header{
-    grid-area: header;
-    display: flex;
-    background-color: #9D2020;
-    justify-content: space-between;
-}
+.logo {
+  display: inline;
+  padding: 20px; }
 
-.logo{
-    display: inline;
-    padding: 20px;
-}
+h1 a {
+  display: inline;
+  text-decoration: none;
+  font-family: 'Fredoka One';
+  color: #ece2d0;
+  margin: 20px;
+  font-size: 50px; }
 
-h1 a{
-    display: inline;
-    text-decoration: none;
-    font-family: 'Fredoka One';
-    color: #ece2d0;
-    margin: 20px;
-    font-size: 50px;
-}
+.navbar {
+  grid-area: navbar;
+  background-color: #9D2020; }
 
-.navbar{
-    grid-area: navbar;
-    background-color: #9D2020;
-}
-
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-.menu li{
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 10px;
+  flex-wrap: wrap; }
+  .menu li {
     list-style-type: none;
     border: solid #ece2d0;
     background: #ece2d0;
     border-radius: 20px;
     padding: 20px;
-    margin: 5px;
-}
-
-.menu a{
-    color:#9D2020;
+    margin: 5px; }
+  .menu a {
+    color: #9D2020;
     text-decoration: none;
     font-family: 'Fredoka One';
     font-size: 15px;
-    transition: .3s ease;
-}
+    transition: .3s ease; }
 
-.inicio-activo, .shop-activo, .eventos-activo, .quienes-somos-activo, .contacto-activo{
-    background: border-box #9D2020;
-    border-radius: 5px;
-    padding: 5px;
-    color: #ece2d0;
-}
+.menu ul {
+  display: none; }
 
-.menu ul{
-    display: none;
-}
+.menu a:hover {
+  background: border-box #9D2020;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ece2d0;
+  transition-duration: 0.2s; }
 
-.menu a:hover{
-    background: border-box #9D2020;
-    border-radius: 5px;
-    padding: 5px;
-    color: #ece2d0;
-    transition-duration: 0.2s;
-}
-
-
-.main{
-    grid-area: main;
-    background-color: #ece2d0;
-    font-family: 'Fredoka One';
-    text-align: center;
-    color: #523726;
-}
-
-.main h2{
+.main {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: 'Fredoka One';
+  text-align: center;
+  color: #523726; }
+  .main h2 {
     font-size: 50px;
-    padding: 20px;
-}
+    padding: 20px; }
 
 @-webkit-keyframes corazon-pulso {
-    25% {
+  25% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    }
-    75% {
+    transform: scale(1.1); }
+  75% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    }
-}
+    transform: scale(0.9); } }
+
 @keyframes corazon-pulso {
-    25% {
+  25% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    }
-    75% {
+    transform: scale(1.1); }
+  75% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    }
-}
+    transform: scale(0.9); } }
+
 .corazon-pulso {
-    display: inline-block;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-animation-name: corazon-pulso;
-    animation-name: corazon-pulso;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: corazon-pulso;
+  animation-name: corazon-pulso;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
 
-.main p{
-    font-family: 'Fredoka One';
-    padding: 20px 50px 50px 50px;
-}
+.main p {
+  font-family: 'Fredoka One';
+  padding: 20px 50px 50px 50px; }
 
-.section{
-    padding: 5px ;
-}
-
-.section img{
+.section {
+  padding: 5px; }
+  .section img {
     width: 268px;
     margin: 27px 27px 64px 27px;
     border: solid #ece2d0;
     border-radius: 20px;
-    transition: .3s ease;
-}
+    transition: .3s ease; }
+    .section img:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1); }
 
-.section img:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    grid-area: footer;
-    background-color: #ece2d0;
-    font-family: 'Open Sans';
-    align-items: center;
-}
-
-.footer h2{
+.footer {
+  display: flex;
+  justify-content: center;
+  grid-area: footer;
+  background-color: #ece2d0;
+  font-family: 'Open Sans';
+  align-items: center; }
+  .footer h2 {
     font-family: 'Open Sans';
     color: #523726;
     font-size: 18px;
     text-align: center;
-    transform: translate(0, 4px);
-}
-
-.footer ul{
+    transform: translate(0, 4px); }
+  .footer ul {
     list-style-type: none;
     text-align: center;
-    justify-content: center
-}
-
-.footer li{
+    justify-content: center; }
+  .footer li {
     display: inline-block;
-    margin: 0 20px 0 20px
-}
-
-.footer a{
+    margin: 0 20px 0 20px; }
+  .footer a {
     font-size: 55px;
     color: #523726;
-    width: 20px;
-}
-
-.footer i{
-    transition: .3s ease;
-}
-
-.footer i:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
+    width: 20px; }
+  .footer i {
+    transition: .3s ease; }
+    .footer i:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1); }
 
 /************** SHOP ***************/
+.contenedorShop {
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 30px; }
 
-.contenedorShop{
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 30px;
+.cajaShop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 90px 50px 90px; }
 
-}
-
-.cajaShop{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 90px 50px 90px;
-}
-
-.productosShop{
-    text-align: center;
-    padding: 25px 10px;
-    border: solid #523726;
-    color: #ece2d0;
-    background-color: #523726;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 20px;
-    transition: .3s ease;
-}
-
-.productosShop:hover{
-    background-color:#ece2d0;
+.productosShop {
+  text-align: center;
+  padding: 25px 10px;
+  border: solid #523726;
+  color: #ece2d0;
+  background-color: #523726;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 20px;
+  transition: .3s ease; }
+  .productosShop:hover {
+    background-color: #ece2d0;
     border: solid #523726;
     color: #523726;
-    transition-duration: 0.2s;
-}
+    transition-duration: 0.2s; }
 
 /************** EVENTOS ***************/
-
-.mainEventos{
-    grid-area: main;
-    background-color: #ece2d0;
-    font-family: 'Fredoka One';
-    text-align: center;
-    color: #523726;
-}
-
-.mainEventos h2{
+.mainEventos {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: 'Fredoka One';
+  text-align: center;
+  color: #523726; }
+  .mainEventos h2 {
     font-size: 50px;
-    padding: 20px;
-}
-
-.mainEventos p{
+    padding: 20px; }
+  .mainEventos p {
     font-family: 'Fredoka One';
     padding: 20px 50px 50px 50px;
-    font-size: 25px;
-}
+    font-size: 25px; }
 
-.botonFormulario a{
-    font-family: 'Fredoka One';
-    color: #9D2020;
-    cursor: pointer;
-}
+.botonFormulario a {
+  font-family: 'Fredoka One';
+  color: #9D2020;
+  cursor: pointer; }
 
-.sectionEventos{
-    padding: 5px ;
-}
+.sectionEventos {
+  padding: 5px; }
 
 @-webkit-keyframes hvr-hang {
-    0% {
+  0% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-    50% {
+    transform: translateY(8px); }
+  50% {
     -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-    }
-    100% {
+    transform: translateY(4px); }
+  100% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-}
+    transform: translateY(8px); } }
+
 @keyframes hvr-hang {
-    0% {
+  0% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-    50% {
+    transform: translateY(8px); }
+  50% {
     -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-    }
-    100% {
+    transform: translateY(4px); }
+  100% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-}
+    transform: translateY(8px); } }
+
 @-webkit-keyframes hvr-hang-sink {
-    100% {
+  100% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-}
+    transform: translateY(8px); } }
+
 @keyframes hvr-hang-sink {
-    100% {
+  100% {
     -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-    }
-}
+    transform: translateY(8px); } }
+
 .hvr-hang {
-    display: inline-block;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+  .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
     -webkit-animation-name: hvr-hang-sink, hvr-hang;
     animation-name: hvr-hang-sink, hvr-hang;
     -webkit-animation-duration: .3s, 1.5s;
@@ -340,18 +259,15 @@ h1 a{
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
-}
+    animation-direction: normal, alternate; }
 
-.sectionEventos img{
-    width: 557px;
-    margin: 27px 27px 64px 27px;
-    border: solid #ece2d0;
-    border-radius: 20px;
-    transition: .3s ease;
-}
-
-.sectionEventos img:hover{
+.sectionEventos img {
+  width: 557px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: .3s ease; }
+  .sectionEventos img:hover {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -360,75 +276,245 @@ h1 a{
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transform: scale(1.1) rotate(4deg);
-    transform: scale(1.1) rotate(4deg);
-}
+    transform: scale(1.1) rotate(4deg); }
 
 /************** QUIENES SOMOS ***************/
-
-.mainQuienessomos{
-    grid-area: main;
-    background-color: #ece2d0;
-    font-family: 'Fredoka One';
-    text-align: center;
-    color: #523726;
-    height: 100%;
-}
-
-.mainQuienessomos h2{
+.mainQuienessomos {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: 'Fredoka One';
+  text-align: center;
+  color: #523726;
+  height: 100%; }
+  .mainQuienessomos h2 {
     font-size: 50px;
-    padding: 20px;
-}
+    padding: 20px; }
 
-.cajaQuienessomos{
-    width: 500px;
-    background-color: #523726;
-    margin: 20px auto;
-    border-radius: 20px;
-}
-
-.cajaQuienessomos p{
+.cajaQuienessomos {
+  width: 500px;
+  background-color: #523726;
+  margin: 20px auto;
+  border-radius: 20px; }
+  .cajaQuienessomos p {
     font-family: 'Fredoka One';
     font-size: 27px;
     color: #ece2d0;
     text-align: center;
-    padding: 20px;
-}
-
-
+    padding: 20px; }
 
 /************** CONTACTO ***************/
+.mainContacto {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: 'Fredoka One';
+  text-align: center;
+  color: #523726; }
+  .mainContacto h2 {
+    font-size: 50px;
+    padding: 20px; }
+  .mainContacto p {
+    font-family: 'Fredoka One';
+    padding: 20px 50px 20px 50px; }
 
-.mainContacto{
+.cajaFormulario {
+  width: 500px;
+  background-color: #523726;
+  margin: 20px auto;
+  border-radius: 20px; }
+
+.contactoFormulario {
+  margin: 35px; }
+
+.casillerosFormulario {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 20px;
+  outline: none;
+  font-family: 'Fredoka One';
+  color: #523726;
+  background-color: #ece2d0; }
+  .casillerosFormulario:focus {
+    box-shadow: 0 0 7px #ece2d0;
+    transition: all 0.3s; }
+
+::placeholder {
+  color: #523726;
+  opacity: 0.5; }
+
+.textarea {
+  height: 150px;
+  padding-top: 10px;
+  resize: none; }
+  .textarea:focus {
+    box-shadow: 0 0 7px #ece2d0;
+    transition: all 0.3s; }
+
+.boton {
+  font-family: 'Fredoka One';
+  color: #523726;
+  background-color: #ece2d0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 15px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s ease; }
+  .boton:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1); }
+
+/************** MEDIA QUERIES ***************/
+@media (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: "header header" "navbar navbar" "main main" "footer footer"; }
+  /************** (MOBILE) INDEX ***************/
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  h1 a {
+    display: inline;
+    text-decoration: none;
+    font-family: 'Fredoka One';
+    color: #ece2d0;
+    margin: 20px;
+    font-size: 34px; }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .menu li {
+      display: flex;
+      list-style-type: none;
+      border: solid #ece2d0;
+      background: #ece2d0;
+      border-radius: 20px;
+      padding: 5px;
+      margin: 2px;
+      transition: all 1s; }
+    .menu a {
+      color: #9D2020;
+      text-decoration: none;
+      font-family: 'Fredoka One';
+      font-size: 8px; }
+      .menu a:hover {
+        background: border-box #9D2020;
+        padding: 0px;
+        color: #ece2d0;
+        transition-duration: 0.2s;
+        border-radius: 20px; }
+  .section img {
+    width: 282px;
+    margin: 10px 0px;
+    border: solid #ece2d0;
+    border-radius: 20px; }
+  .footer a {
+    font-size: 50px; }
+  /************** (MOBILE) SHOP ***************/
+  .contenedorShop {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px; }
+  .cajaShop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0; }
+  .productosShop {
+    text-align: center;
+    padding: 25px 10px;
+    border: solid #523726;
+    color: #ece2d0;
+    background-color: #523726;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px; }
+  /************** (MOBILE) EVENTOS ***************/
+  .mainEventos {
+    display: flex;
+    flex-wrap: wrap;
     grid-area: main;
     background-color: #ece2d0;
     font-family: 'Fredoka One';
     text-align: center;
     color: #523726;
-}
-
-.mainContacto h2{
-    font-size: 50px;
-    padding: 20px;
-}
-
-.mainContacto p{ 
+    align-content: center;
+    justify-content: center; }
+    .mainEventos h2 {
+      flex-wrap: wrap;
+      font-size: 50px;
+      padding: 12px; }
+    .mainEventos p {
+      font-family: 'Fredoka One';
+      padding: 20px 50px 50px 50px;
+      font-size: 25px; }
+  .botonFormulario a {
     font-family: 'Fredoka One';
-    padding: 20px 50px 20px 50px;
-}
-
-.cajaFormulario{
+    color: #9D2020;
+    cursor: pointer; }
+  .sectionEventos {
+    padding: 5px; }
+    .sectionEventos img {
+      width: 300px;
+      margin: 20px 0 20px 0;
+      border: solid #ece2d0;
+      border-radius: 20px; }
+  /************** (MOBILE) QUIENES SOMOS ***************/
+  .cajaQuienessomos {
+    width: 300px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px; }
+  .mainQuienessomos {
+    display: flex;
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+    flex-wrap: wrap;
+    height: auto; }
+  /************** (MOBILE) CONTACTO ***************/
+  .mainContacto {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: 'Fredoka One';
+    text-align: center;
+    color: #523726;
+    justify-content: center; }
+  .cajaFormulario {
+    display: flex;
     width: 500px;
     background-color: #523726;
     margin: 20px auto;
     border-radius: 20px;
-}
-
-.contactoFormulario{
-    margin: 35px;
-}
-
-.casillerosFormulario{
-    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mainContacto h2 {
+    font-size: 45px;
+    padding: 20px; }
+  .cajaFormulario {
+    display: flex;
+    width: 300px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .casillerosFormulario {
+    width: 260px;
     height: 40px;
     margin-top: 20px;
     padding-left: 10px;
@@ -436,281 +522,12 @@ h1 a{
     border: 1px solid #777;
     border-radius: 20px;
     outline: none;
-    font-family: 'Fredoka One';
-    color: #523726;
-    background-color: #ece2d0;
-}
-
-.casillerosFormulario:focus{
-    box-shadow: 0 0 7px #ece2d0;
-    transition: all 0.3s;
-}
-
-::placeholder{
-    color: #523726;
-    opacity: 0.5;
-}
-
-.textarea{
-    height: 150px;
-    padding-top: 10px;
-    resize: none;
-}
-
-.textarea:focus {
-    box-shadow: 0 0 7px #ece2d0;
-    transition: all 0.3s;
-}
-
-.boton{
-    font-family: 'Fredoka One';
-    color: #523726;
-    background-color: #ece2d0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 15px;
-    border: solid #ece2d0;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.boton:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
-
-/************** MEDIA QUERIES ***************/
-
-
-@media (max-width: 425px){
-    .grid-container{
-        grid-template-columns: 200px auto;
-        grid-template-rows: 100px 50px auto 100px;
-        grid-template-areas:
-        "header header"
-        "navbar navbar"
-        "main main"
-        "footer footer";
-    }
-
-    /************** (MOBILE) INDEX ***************/
-    
-    .header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 a{
-        display: inline;
-        text-decoration: none;
-        font-family: 'Fredoka One';
-        color: #ece2d0;
-        margin: 20px;
-        font-size: 34px;
-    }
-
-    .menu{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    
-    .menu li{
-        display: flex;
-        list-style-type: none;
-        border: solid #ece2d0;
-        background: #ece2d0;
-        border-radius: 20px;
-        padding: 5px;
-        margin: 2px;
-        transition: all 1s;
-    }
-    
-    .menu a{
-        color: #9D2020;
-        text-decoration: none;
-        font-family: 'Fredoka One';
-        font-size: 8px;
-    }
-
-    .menu a:hover{
-        background: border-box #9D2020;
-        padding: 0px;
-        color: #ece2d0;
-        transition-duration: 0.2s;
-        border-radius: 20px;
-    }
-
-    .section img{
-        width: 282px;
-        margin: 10px 0px;
-        border: solid #ece2d0;
-        border-radius: 20px;
-    }
-
-    .footer a{
-        font-size: 50px;
-    }
-
-    /************** (MOBILE) SHOP ***************/
-
-    .contenedorShop{
-        
-        flex-wrap: wrap;
-        width: 100%;
-        padding-top: 30px;
-    
-    }
-    
-    .cajaShop{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
-    
-    .productosShop{
-        text-align: center;
-        padding: 25px 10px;
-        border: solid #523726;
-        color: #ece2d0;
-        background-color: #523726;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 20px;
-    }
-
-    /************** (MOBILE) EVENTOS ***************/
-
-    .mainEventos{
-        display: flex;
-        flex-wrap: wrap;
-        grid-area: main;
-        background-color: #ece2d0;
-        font-family: 'Fredoka One';
-        text-align: center;
-        color: #523726;
-        align-content: center;
-        justify-content: center;
-    }
-    
-    .mainEventos h2{
-        flex-wrap: wrap;
-        font-size: 50px;
-        padding: 12px;
-    }
-    
-    .mainEventos p{
-        font-family: 'Fredoka One';
-        padding: 20px 50px 50px 50px;
-        font-size: 25px;
-    }
-    
-    .botonFormulario a{
-        font-family: 'Fredoka One';
-        color: #9D2020;
-        cursor: pointer;
-    }
-    
-    .sectionEventos{
-        padding: 5px ;
-    }
-    
-    .sectionEventos img{
-        width: 300px;
-        margin: 20px 0 20px 0;
-        border: solid #ece2d0;
-        border-radius: 20px;
-    }
-    
-    /************** (MOBILE) QUIENES SOMOS ***************/
-
-    .cajaQuienessomos {
-        width: 300px;
-        background-color: #523726;
-        margin: 20px auto;
-        border-radius: 20px;
-    }
-    
-    .mainQuienessomos {
-        display: flex;
-        grid-area: main;
-        background-color: #ece2d0;
-        font-family: 'Fredoka One';
-        text-align: center;
-        color: #523726;
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    /************** (MOBILE) CONTACTO ***************/
-
-    .mainContacto {
-        display: flex;
-        flex-wrap: wrap;
-        grid-area: main;
-        background-color: #ece2d0;
-        font-family: 'Fredoka One';
-        text-align: center;
-        color: #523726;
-        justify-content: center;
-    }
-
-    .cajaFormulario {
-        display: flex;
-        width: 500px;
-        background-color: #523726;
-        margin: 20px auto;
-        border-radius: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .mainContacto h2 {
-        font-size: 45px;
-        padding: 20px;
-    }
-
-    .cajaFormulario {
-        display: flex;
-        width: 300px;
-        background-color: #523726;
-        margin: 20px auto;
-        border-radius: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .casillerosFormulario {
-        width: 260px;
-        height: 40px;
-        margin-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: 1px solid #777;
-        border-radius: 20px;
-        outline: none;
-        font-family: 'Fredoka One';
-    }
-
-    .contactoFormulario textarea {
-        height: 150px;
-    }
-}
+    font-family: 'Fredoka One'; }
+  .contactoFormulario textarea {
+    height: 150px; } }
 
 @media (min-width: 1280px) {
-    .grid-container{
-        grid-template-columns: 200px auto;
-        grid-template-rows: 100px auto 100px;
-        grid-template-areas:
-        "header header navbar"
-        "main main main"
-        "footer footer footer";
-    }
-}
+  .grid-container {
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header navbar" "main main main" "footer footer footer"; } }
