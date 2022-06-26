@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/************** INDEX ***************/
+.header {
+  grid-area: header;
+  display: flex;
+  background-color: #9D2020;
+  justify-content: space-between;
+  box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+  z-index: 200;
+}
+.header img {
+  width: 100px;
+  display: flex;
+}
+
+nav {
+  background: #9D2020;
+  height: 100px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  font-family: "Fredoka One";
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+li a.active, li a:hover {
+  background: #ece2d0;
+  transition: 0.5s;
+  color: #9D2020;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.main {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: "Fredoka One";
+  text-align: center;
+  color: #523726;
+}
+.main h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.main p {
+  margin: 0 200px 0 200px;
+}
+
+@-webkit-keyframes corazon-pulso {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+@keyframes corazon-pulso {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+.corazon-pulso {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: corazon-pulso;
+  animation-name: corazon-pulso;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.main p {
+  font-family: "Fredoka One";
+  padding: 20px 50px 50px 50px;
+}
+
+.section {
+  padding: 5px;
+}
+.section img {
+  width: 268px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.section img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  grid-area: footer;
+  background-color: #ece2d0;
+  font-family: "Open Sans";
+  align-items: center;
+}
+.footer h2 {
+  font-family: "Open Sans";
+  color: #523726;
+  font-size: 18px;
+  text-align: center;
+  transform: translate(0, 4px);
+}
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+}
+.footer li {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+.footer a {
+  font-size: 55px;
+  color: #523726;
+  width: 20px;
+}
+.footer i {
+  transition: 0.3s ease;
+}
+.footer i:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+/************** SHOP ***************/
+.contenedorShop {
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.cajaShop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productosShop {
+  text-align: center;
+  border: solid #523726;
+  color: #ece2d0;
+  background-color: #523726;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+.productosShop:hover {
+  background-color: #ece2d0;
+  border: solid #523726;
+  color: #523726;
+  transition-duration: 0.2s;
+}
+
+/************** EVENTOS ***************/
+.mainEventos {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: "Fredoka One";
+  text-align: center;
+  color: #523726;
+}
+.mainEventos h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.mainEventos p {
+  font-family: "Fredoka One";
+  padding: 20px 50px 50px 50px;
+  font-size: 25px;
+}
+
+.botonFormulario a {
+  font-family: "Fredoka One";
+  color: #9D2020;
+  cursor: pointer;
+}
+
+.sectionEventos {
+  padding: 5px;
+}
+
+@-webkit-keyframes hvr-hang {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.sectionEventos img {
+  width: 557px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.sectionEventos img:hover {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: scale(1.1) rotate(4deg);
+}
+
+/************** QUIENES SOMOS ***************/
+.mainQuienessomos {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: "Fredoka One";
+  text-align: center;
+  color: #523726;
+  height: 100%;
+}
+.mainQuienessomos h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.cajaQuienessomos {
+  width: 500px;
+  background-color: #523726;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+.cajaQuienessomos p {
+  font-family: "Fredoka One";
+  font-size: 27px;
+  color: #ece2d0;
+  text-align: center;
+  padding: 20px;
+}
+
+/************** CONTACTO ***************/
+.mainContacto {
+  grid-area: main;
+  background-color: #ece2d0;
+  font-family: "Fredoka One";
+  text-align: center;
+  color: #523726;
+}
+.mainContacto h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.mainContacto p {
+  font-family: "Fredoka One";
+  padding: 20px 50px 20px 50px;
+}
+
+.cajaFormulario {
+  width: 500px;
+  background-color: #523726;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.contactoFormulario {
+  margin: 35px;
+}
+
+.casillerosFormulario {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Fredoka One";
+  color: #523726;
+  background-color: #ece2d0;
+}
+.casillerosFormulario:focus {
+  box-shadow: 0 0 7px #ece2d0;
+  transition: all 0.3s;
+}
+
+::-moz-placeholder {
+  color: #523726;
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  color: #523726;
+  opacity: 0.5;
+}
+
+::placeholder {
+  color: #523726;
+  opacity: 0.5;
+}
+
+.textarea {
+  height: 150px;
+  padding-top: 10px;
+  resize: none;
+}
+.textarea:focus {
+  box-shadow: 0 0 7px #ece2d0;
+  transition: all 0.3s;
+}
+
+.boton {
+  font-family: "Fredoka One";
+  color: #523726;
+  background-color: #ece2d0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 15px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.boton:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+/************** MEDIA QUERIES ***************/
+@media (max-width: 952px) {
+  .grid-container {
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header" "main" "footer";
+  }
+
+  /************** (MOBILE) INDEX ***************/
+  .header {
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 101;
+  }
+  .header .enlace {
+    padding-left: 20px;
+  }
+  .header a {
+    font-size: 16px;
+  }
+
+  .main p {
+    margin: 0;
+  }
+
+  .section img {
+    width: 282px;
+    margin: 10px 0px;
+    border: solid #ece2d0;
+    border-radius: 20px;
+  }
+
+  .footer a {
+    font-size: 50px;
+  }
+
+  /************** (MOBILE) SHOP ***************/
+  .contenedorShop {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .cajaShop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .productosShop {
+    text-align: center;
+    padding: 25px 10px;
+    border: solid #523726;
+    color: #ece2d0;
+    background-color: #523726;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  /************** (MOBILE) EVENTOS ***************/
+  .mainEventos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: "Fredoka One";
+    text-align: center;
+    color: #523726;
+    align-content: center;
+    justify-content: center;
+  }
+  .mainEventos h2 {
+    flex-wrap: wrap;
+    font-size: 50px;
+    padding: 12px;
+  }
+  .mainEventos p {
+    font-family: "Fredoka One";
+    padding: 20px 50px 50px 50px;
+    font-size: 25px;
+  }
+
+  .botonFormulario a {
+    font-family: "Fredoka One";
+    color: #9D2020;
+    cursor: pointer;
+  }
+
+  .sectionEventos {
+    padding: 5px;
+  }
+  .sectionEventos img {
+    width: 300px;
+    margin: 20px 0 20px 0;
+    border: solid #ece2d0;
+    border-radius: 20px;
+  }
+
+  /************** (MOBILE) QUIENES SOMOS ***************/
+  .cajaQuienessomos {
+    width: 300px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+
+  .mainQuienessomos {
+    display: flex;
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: "Fredoka One";
+    text-align: center;
+    color: #523726;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  /************** (MOBILE) CONTACTO ***************/
+  .mainContacto {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    background-color: #ece2d0;
+    font-family: "Fredoka One";
+    text-align: center;
+    color: #523726;
+    justify-content: center;
+  }
+
+  .cajaFormulario {
+    display: flex;
+    width: 500px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mainContacto h2 {
+    font-size: 45px;
+    padding: 20px;
+  }
+
+  .cajaFormulario {
+    display: flex;
+    width: 300px;
+    background-color: #523726;
+    margin: 20px auto;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .casillerosFormulario {
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 20px;
+    outline: none;
+    font-family: "Fredoka One";
+  }
+
+  .contactoFormulario textarea {
+    height: 150px;
+  }
+}
+@media (max-width: 858px) {
+  header .checkbtn {
+    display: block;
+  }
+  header ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9D2020;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header nav ul li a {
+    display: block;
+    font-size: 20px;
+  }
+  header li a:hover, header li a.active {
+    background: none;
+    color: #000;
+  }
+  header #check:checked ~ ul {
+    right: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .grid-container {
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header" "main" "footer";
+  }
+}/*# sourceMappingURL=main.css.map */
