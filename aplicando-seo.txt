@@ -1,0 +1,21 @@
+Cambio 1: Agregue etiqueta "title"
+index: Lita Pasteleria
+shop: Shop - Lita Pasteleria
+quienes-somos: Quienes somos - Lita Pasteleria
+eventos: Eventos - Lita Pasteleria
+contacto: Contacto - Lita Pasteleria
+
+Cambio 2: Agregue etiqueta "keywords"
+index: lita, pasteleria, tortas, eventos, catering
+shop: shop, comprar, mercado, pedido
+quienes-somos: quienes somos, acerca, sobre nosotros, conocenos
+eventos: eventos, casamiento, fiesta, cumpleaños, bautismo, baby shower
+contacto: contacto, mail, numero, pasteleria
+
+Cambio 2: Agregue etiqueta "description"
+index: Te invitamos a que pruebes nuestras mejores recetas, en Lita Pasteleria hacemos todo con amor para llegar siempre al mejor resultado y cumplir con todas tus expectativas.
+shop: Te brindamos lo mejor de nuesta pasteleria.
+quienes-somos: Lita Pasteleria nacio como un empredimiento el 2 de Agosto de 2020 fundado por dos amigas amantes de la pasteleria, Florencia y Rocio.
+eventos: En Lita Pasteleria contamos con servicio de Catering para que endulces tus eventos con los productos mas ricos.
+contacto: ¡Dejanos tu consulta y nos estaremos comunicando a la brevedad!
+

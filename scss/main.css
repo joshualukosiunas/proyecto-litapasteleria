@@ -1,4 +1,118 @@
+/************** FONTS ***************/
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap");
+/************** VARIABLES ***************/
+.corazon-pulso {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: corazon-pulso;
+  animation-name: corazon-pulso;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes corazon-pulso {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+@keyframes corazon-pulso {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+
+.hvr-hang {
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+@-webkit-keyframes hvr-hang {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.section img {
+  width: 300px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.section img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.sectionEventos img {
+  width: 557px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.sectionEventos img:hover {
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: scale(1.1) rotate(4deg);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +134,14 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
+.index-images {
+  width: 268px;
+  margin: 27px 27px 64px 27px;
+  border: solid #ece2d0;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
 /************** INDEX ***************/
 .header {
   grid-area: header;
@@ -39,11 +161,6 @@ nav {
   height: 100px;
   width: 100%;
 }
-
-.enlace {
-  position: absolute;
-}
-
 nav ul {
   float: right;
 }
@@ -53,7 +170,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color: #fff;
+  color: #ece2d0;
   font-family: "Fredoka One";
   font-size: 18px;
   padding: 7px 13px;
@@ -61,25 +178,25 @@ nav ul li a {
   text-decoration: none;
   transition: all 0.5s;
 }
-
-li a.active, li a:hover {
+nav li a.active, nav li a:hover {
   background: #ece2d0;
   transition: 0.5s;
   color: #9D2020;
 }
-
-.checkbtn {
+nav .checkbtn {
   font-size: 30px;
-  color: #fff;
+  color: #ece2d0;
   float: right;
   line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-
-#check {
+nav #check {
   display: none;
+}
+nav .enlace {
+  position: absolute;
 }
 
 .main {
@@ -95,39 +212,6 @@ li a.active, li a:hover {
 }
 .main p {
   margin: 0 200px 0 200px;
-}
-
-@-webkit-keyframes corazon-pulso {
-  25% {
-    transform: scale(1.1);
-  }
-  75% {
-    transform: scale(0.9);
-  }
-}
-@keyframes corazon-pulso {
-  25% {
-    transform: scale(1.1);
-  }
-  75% {
-    transform: scale(0.9);
-  }
-}
-.corazon-pulso {
-  display: inline-block;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-animation-name: corazon-pulso;
-  animation-name: corazon-pulso;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.main p {
   font-family: "Fredoka One";
   padding: 20px 50px 50px 50px;
 }
@@ -135,19 +219,6 @@ li a.active, li a:hover {
 .section {
   padding: 5px;
 }
-.section img {
-  width: 268px;
-  margin: 27px 27px 64px 27px;
-  border: solid #ece2d0;
-  border-radius: 20px;
-  transition: 0.3s ease;
-}
-.section img:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -242,75 +313,6 @@ li a.active, li a:hover {
 
 .sectionEventos {
   padding: 5px;
-}
-
-@-webkit-keyframes hvr-hang {
-  0% {
-    transform: translateY(8px);
-  }
-  50% {
-    transform: translateY(4px);
-  }
-  100% {
-    transform: translateY(8px);
-  }
-}
-@keyframes hvr-hang {
-  0% {
-    transform: translateY(8px);
-  }
-  50% {
-    transform: translateY(4px);
-  }
-  100% {
-    transform: translateY(8px);
-  }
-}
-@-webkit-keyframes hvr-hang-sink {
-  100% {
-    transform: translateY(8px);
-  }
-}
-@keyframes hvr-hang-sink {
-  100% {
-    transform: translateY(8px);
-  }
-}
-.hvr-hang {
-  display: inline-block;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-  -webkit-animation-name: hvr-hang-sink, hvr-hang;
-  animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: 0.3s, 1.5s;
-  animation-duration: 0.3s, 1.5s;
-  -webkit-animation-delay: 0s, 0.3s;
-  animation-delay: 0s, 0.3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
-.sectionEventos img {
-  width: 557px;
-  margin: 27px 27px 64px 27px;
-  border: solid #ece2d0;
-  border-radius: 20px;
-  transition: 0.3s ease;
-}
-.sectionEventos img:hover {
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transform: scale(1.1) rotate(4deg);
 }
 
 /************** QUIENES SOMOS ***************/
