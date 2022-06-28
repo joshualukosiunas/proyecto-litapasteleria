@@ -271,11 +271,12 @@ a {
   .galeria h5 {
     text-align: center;
     color: #523726;
-    padding-top: 8px; }
+    padding: 10px; }
   .galeria h6 {
     font-size: 26px;
     text-align: center;
-    color: #523726; }
+    color: #523726;
+    padding: 20px 0 10px 0; }
   .galeria button {
     text-align: center;
     font-size: 24px;
