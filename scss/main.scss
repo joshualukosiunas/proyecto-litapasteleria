@@ -179,35 +179,77 @@ nav {
 
 /************** SHOP ***************/
 
-.contenedorShop {
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 30px;
-}
-
-.cajaShop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.productosShop {
-    text-align: center;
-    border: solid $marron;
-    color: $crema;
-    background-color: $marron;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px;
-    transition: .3s ease;
-
-    &:hover {
-        background-color: $crema;
-        border: solid $marron;
-        color: $marron;
-        transition-duration: 0.2s;
+    h4{
+        text-align: center;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 10px;
     }
-}
+    a{
+        text-decoration: none;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        padding-top: 50px;
+
+        .contenido{
+            width: 20%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            transition: .4s;
+            background: $crema;
+        }
+        .contenido:hover{
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            transform: translate(0px, -8px);
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
+        h5{
+            text-align: center;
+            color: $marron;
+            padding-top: 8px;
+        }
+        h6{
+            font-size: 26px;
+            text-align: center;
+            color: $marron;
+        }
+        button{
+            text-align: center;
+            font-size: 24px;
+            color: $crema;
+            width: 100%;
+            padding: 15px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            margin-top: 5px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .comprar{
+            background: $marron;
+            font-family: 'Fredoka One';
+        }
+    }
+
+
 
 /************** EVENTOS ***************/
 
@@ -389,31 +431,35 @@ nav {
 
 
 
-/************** (MOBILE) SHOP ***************/
-
-    .contenedorShop {
-        flex-wrap: wrap;
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    .cajaShop {
+    /************** (MOBILE) SHOP ***************/
+    .galeria{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
         justify-content: center;
-        padding: 0;
-    }
+        padding-top: 50px;
 
-    .productosShop {
-        text-align: center;
-        padding: 25px 10px;
-        border: solid $marron;
-        color: $crema;
-        background-color: $marron;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        margin: 20px;
+        .contenido{
+            width: 20%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            transition: .4s;
+            background: $crema;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
     }
 
     /************** (MOBILE) EVENTOS ***************/
@@ -573,6 +619,42 @@ nav {
         #check:checked~ul {
             right: 0;
         }
+    }
+
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        align-content: center;
+
+        .contenido{
+            width: 90%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
+            transition: .4s;
+            background: $crema;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+        }
+    }
+    
+    .contenido {
+        width: 100%;
     }
 }
 
